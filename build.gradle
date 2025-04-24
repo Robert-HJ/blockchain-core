@@ -28,8 +28,8 @@ dependencies {
     /* ------------------------------ 공용 라이브러리 -------------------------------------- */
 
     // 공통 유틸리티 라이브러리에 필요한 최소한의 의존성들
-    api 'org.springframework:spring-context'  // Spring 컨텍스트 기능
     api 'org.springframework:spring-web'      // 웹 관련 유틸리티 (필요한 경우)
+    api 'org.springframework:spring-context'  // Spring 컨텍스트 기능
 
     // 흔히 사용되는 유틸리티 라이브러리들
     api 'org.apache.commons:commons-lang3'    // 문자열, 숫자 등 기본 유틸
