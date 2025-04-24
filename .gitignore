@@ -5,7 +5,3 @@
 *.ipr
 out/
 
-### log ###
-*.log
-*.gz
-/.apt_generated_tests/
