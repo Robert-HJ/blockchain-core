@@ -1,4 +1,4 @@
-package org.wemade.blockchaincore;
+package com.wemade.blockchaincore;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
