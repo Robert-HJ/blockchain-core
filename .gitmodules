@@ -1,4 +1,4 @@
 [submodule "web-dev-core"]
 	path = web-dev-core
 	url = https://bitbucket.org/wemade-tree/web-dev-core.git
-	branch = feature/jdk17
+	branch = release/0.0.2
