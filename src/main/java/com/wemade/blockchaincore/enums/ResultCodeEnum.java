@@ -24,62 +24,28 @@ public enum  ResultCodeEnum {
     private final String message;
     private final String description;
 
-    /**
-     * 결과 코드 생성자
-     *
-     * @param code 코드 값
-     * @param message 코드 메시지
-     */
     ResultCodeEnum(int code, String message) {
         this(code, message, "");
     }
 
-    /**
-     * 결과 코드 생성자
-     *
-     * @param code 코드 값
-     * @param message 코드 메시지
-     * @param description 코드 설명 (한글)
-     */
     ResultCodeEnum(int code, String message, String description) {
         this.code = code;
         this.message = message;
         this.description = description;
     }
 
-    /**
-     * 코드 값을 반환합니다.
-     *
-     * @return 코드 값
-     */
     public int getCode() {
         return code;
     }
 
-    /**
-     * 코드 메시지를 반환합니다.
-     *
-     * @return 코드 메시지
-     */
     public String getMessage() {
         return message;
     }
 
-    /**
-     * 코드 설명을 반환합니다.
-     *
-     * @return 코드 설명
-     */
     public String getDescription() {
         return description;
     }
 
-    /**
-     * 코드 값으로 ResultCode를 찾습니다.
-     *
-     * @param code 코드 값
-     * @return 해당 코드 값을 가진 ResultCode, 없으면 null
-     */
     public static ResultCodeEnum fromCode(int code) {
         for (ResultCodeEnum resultCode : ResultCodeEnum.values()) {
             if (resultCode.code == code) {
@@ -89,11 +55,6 @@ public enum  ResultCodeEnum {
         return null;
     }
 
-    /**
-     * toString 메서드 오버라이드
-     *
-     * @return 코드 메시지
-     */
     @Override
     public String toString() {
         return this.message;
