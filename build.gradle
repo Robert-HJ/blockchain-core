@@ -25,9 +25,7 @@ repositories {
 
 dependencies {
 
-    // web-dev-core에 있는 라이브러리들은 제거 필요함..
-    // web-dev-core는 jdk가 17인데 괜찮나?
-    implementation project(':web-dev-core')
+    implementation project(':blockchain-core:web-dev-core')
 
 
     /* ------------------------------ 공용 라이브러리 -------------------------------------- */
