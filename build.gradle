@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
-    id 'org.springframework.boot' version '3.3.0'
-    id 'io.spring.dependency-management' version '1.1.5'
+    id 'org.springframework.boot' version '3.4.5'
+    id 'io.spring.dependency-management' version '1.1.7'
 }
 
 group = 'org.wemade'
@@ -27,35 +27,11 @@ dependencies {
 
     implementation project(':blockchain-core:web-dev-core')
 
-
-    /* ------------------------------ 공용 라이브러리 -------------------------------------- */
-
-    // 스프링부트 웹
-    api 'org.springframework.boot:spring-boot-starter-web'
-
-    // AOP
-    api 'org.springframework.boot:spring-boot-starter-aop'
-
-    // Redis
-    api 'org.springframework.boot:spring-boot-starter-data-redis'
-
-    // 유효성 검증
-    api 'org.springframework.boot:spring-boot-starter-validation'
-
     // 문자열, 숫자 등 기본 유틸
     api 'org.apache.commons:commons-lang3'
 
-    // 인코딩, 디코딩 유틸
-    api 'commons-codec:commons-codec:1.16.0'
-
-    // apache commons collection
-    api 'org.apache.commons:commons-collections4:4.4'
-    api 'org.apache.httpcomponents.client5:httpclient5:5.3.1'
-
     // JSON 처리
     api 'com.fasterxml.jackson.core:jackson-databind'
-
-    /* -------------------------------------------------------------------------------- */
 
     // Lombok
     compileOnly 'org.projectlombok:lombok'
